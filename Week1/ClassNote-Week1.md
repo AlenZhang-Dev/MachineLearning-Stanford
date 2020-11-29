@@ -1,6 +1,10 @@
 # Week 1
 
-# 1. Introduction
+[toc]
+
+
+
+# Introduction
 
 Introduce the core idea of teaching a computer to learn concepts using data - without being explicitly programmed.
 
@@ -23,6 +27,7 @@ Examples:
     - Large datasets from growth of automation/web
     - E.g., Web click data, medical records, biology, engineering
 - Applications can't program by hand.
+    
     - E.g., Autonomous helicopter, handwriting recognition, most of Natural Language Processing(NLP), Computer Vision.
 - Self-customizing programs
 
@@ -70,17 +75,17 @@ Others: Reinforcement Learning, recommender systems.
 
 In supervised learning, we are given a data set and already know what our correct output should look like, **having the idea that there is a relationship between the input and the output.**
 
-Supervised learning problems are categorized into "**regression**" and "**classification**" problems. 
+<u>Supervised learning problems are categorized into "**regression**" and "**classification**" problems.</u> 
 
 In a regression problem, we are trying to predict results within a **continuous output**, meaning that we are trying to map input variables to some continuous function. 
 
 In a classification problem, we are instead trying to predict results in a **discrete output[离散输出]**. In other words, we are trying to map input variables into discrete categories.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_3.50.40_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_3.50.40_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_3.50.40_PM.png](Week1/Screen_Shot_2020-10-28_at_3.50.40_PM.png)
 
 Regression exp
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_3.51.03_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_3.51.03_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_3.51.03_PM.png](Week1/Screen_Shot_2020-10-28_at_3.51.03_PM.png)
 
 Classification
 
@@ -136,39 +141,37 @@ Given a set of news articles found on web, group them into sets of articles abou
 
 Given a database of customer data, automatically discover market segments and group customers into different market segments.
 
-# 2. Model and Cost Function
+# Model and Cost Function
 
-### Model Representation
+## Model Representation
 
 **Notes:**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_6.03.23_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_6.03.23_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_6.03.23_PM.png](Week1/Screen_Shot_2020-10-27_at_6.03.23_PM.png)
 
 Linear regression model with only one variable[Also called univariate linear regression]
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_6.10.45_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_6.10.45_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_6.10.45_PM.png](Week1/Screen_Shot_2020-10-27_at_6.10.45_PM.png)
 
 **Material:**
 
 To describe the supervised learning problem slightly more formally, our goal is, given a training set, to learn a function h : X → Y so that h(x) is a “good” predictor for the corresponding value of y. For historical reasons, this function h is called a **hypothesis**. Seen pictorially, the process is therefore like this:
 
-![https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/H6qTdZmYEeaagxL7xdFKxA_2f0f671110e8f7446bb2b5b2f75a8874_Screenshot-2016-10-23-20.14.58.png?expiry=1603929600000&hmac=bZ7QUw2rAVmXTH6hg7qEE914oJt9L5r6CR8icrP1umk](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/H6qTdZmYEeaagxL7xdFKxA_2f0f671110e8f7446bb2b5b2f75a8874_Screenshot-2016-10-23-20.14.58.png?expiry=1603929600000&hmac=bZ7QUw2rAVmXTH6hg7qEE914oJt9L5r6CR8icrP1umk)
-
 When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When y can take on only a small number of discrete values (such as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.
 
-### Cost Function
+## Cost Function
 
 **Notes:**
 
 How to choose the parameters?
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_6.17.14_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_6.17.14_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_6.17.14_PM.png](Week1/Screen_Shot_2020-10-27_at_6.17.14_PM.png)
 
 **Material**:
 
 We can measure the accuracy of our hypothesis function by using a **cost function**. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x's and the actual output y's.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_4.06.02_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_4.06.02_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_4.06.02_PM.png](Week1/Screen_Shot_2020-10-28_at_4.06.02_PM.png)
 
 MSE: the most common one used for regression problems.
 
@@ -178,43 +181,43 @@ MSE: the most common one used for regression problems.
 
 1.Set the theta(0) to zero.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_6.58.03_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_6.58.03_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_6.58.03_PM.png](Week1/Screen_Shot_2020-10-27_at_6.58.03_PM.png)
 
 2.The optimization objective for our learning algorithm is we want to choose the value of theta (1).  The Minimizes J(theat(1)).
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_7.39.12_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_7.39.12_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_7.39.12_PM.png](Week1/Screen_Shot_2020-10-27_at_7.39.12_PM.png)
 
 Material:
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_7.39.36_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_7.39.36_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_7.39.36_PM.png](Week1/Screen_Shot_2020-10-27_at_7.39.36_PM.png)
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_7.39.52_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_7.39.52_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_7.39.52_PM.png](Week1/Screen_Shot_2020-10-27_at_7.39.52_PM.png)
 
 ## Cost function - Intuition II
 
 1. Keep both two parameters of the cost function.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_4.42.52_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_4.42.52_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_4.42.52_PM.png](Week1/Screen_Shot_2020-10-28_at_4.42.52_PM.png)
 
 The cost function may be look like below:
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_4.43.16_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_4.43.16_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_4.43.16_PM.png](Week1/Screen_Shot_2020-10-28_at_4.43.16_PM.png)
 
 Contour plots / figure
 
 A contour plot is a graph that contains many contour lines. A contour line of a two variable function has constant value at all points of same line. An example of such a graph is the one to the right below:
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_4.46.54_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_4.46.54_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_4.46.54_PM.png](Week1/Screen_Shot_2020-10-28_at_4.46.54_PM.png)
 
 3 green x have the same cost.
 
 When θ0=360 and θ1 = 0, the value of J(θ0, θ1) in the contour plot gets closer to the center thus reducing the cost function error. Now Giving our hypothesis function a slightly positive slope result in a better fit of the data.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_4.57.37_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_4.57.37_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_4.57.37_PM.png](Week1/Screen_Shot_2020-10-28_at_4.57.37_PM.png)
 
 The graph above minimizes the cost function as much as possible and consequently, the result of θ1 and θ0 tend to be around 0.12 and 250 respectively. Plotting those values on our graph to the right seems to put our point in the center of the inner most 'circle'.
 
-# 3. Parameter Learning
+# Parameter Learning
 
 ## Gradient Descent
 
@@ -222,7 +225,7 @@ The algorithm called gradient descent for **minimizing the cost function j().**
 
 Gradient is a general algorithm.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_8.07.15_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_8.07.15_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_8.07.15_PM.png](Week1/Screen_Shot_2020-10-27_at_8.07.15_PM.png)
 
 The outline of Gradient descent algorithm:
 
@@ -230,17 +233,17 @@ Understand the concept between Assignment and Truth assertion.
 
 Simultaneous update both parameters.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_8.29.22_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_8.29.22_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_8.29.22_PM.png](Week1/Screen_Shot_2020-10-27_at_8.29.22_PM.png)
 
 **Material:**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_8.31.07_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_8.31.07_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_8.31.07_PM.png](Week1/Screen_Shot_2020-10-27_at_8.31.07_PM.png)
 
 We will know that we have succeed when our cost function is at the very bottom of the pits in our graph. when its values is the minimum. The red arrows show the minimum points in the graph.
 
 The way we do is by taking the derivative of our cost function. The slope of the tangent is the derivative at the point and it will give us a direction move towards. We make steps down the cost function in the direction with the steepest descent. The size of each step is determined by the parameter α, which is called the learning rate.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_8.31.16_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_8.31.16_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_8.31.16_PM.png](Week1/Screen_Shot_2020-10-27_at_8.31.16_PM.png)
 
 ## Gradient Descent Intuition
 
@@ -252,15 +255,15 @@ don't need to change the a.
 
 Explain the Gradient descent with one variable:
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.02.06_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.02.06_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_9.02.06_PM.png](Week1/Screen_Shot_2020-10-27_at_9.02.06_PM.png)
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.01.29_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.01.29_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_9.01.29_PM.png](Week1/Screen_Shot_2020-10-27_at_9.01.29_PM.png)
 
 Features of Gradient descent:
 
 When reach the bottom of our convex function, the derivative will always be 0, thus we get the settled *θ1.*
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.01.42_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.01.42_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_9.01.42_PM.png](Week1/Screen_Shot_2020-10-27_at_9.01.42_PM.png)
 
 ## Gradient Descent For Linear Regression
 
@@ -268,55 +271,55 @@ Simplify the function:
 
 When we apply the Gradient descent algorithm with Linear Regression Model, we will derived a new form of the gradient descent equation.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_6.37.54_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_6.37.54_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_6.37.54_PM.png](Week1/Screen_Shot_2020-10-28_at_6.37.54_PM.png)
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.10.52_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.10.52_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_9.10.52_PM.png](Week1/Screen_Shot_2020-10-27_at_9.10.52_PM.png)
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.16.44_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.16.44_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_9.16.44_PM.png](Week1/Screen_Shot_2020-10-27_at_9.16.44_PM.png)
 
 Convex function equals to Bowl shaped
 
 "Batch" Gradient Descent.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.24.15_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-27_at_9.24.15_PM.png)
+![Week1/Screen_Shot_2020-10-27_at_9.24.15_PM.png](Week1/Screen_Shot_2020-10-27_at_9.24.15_PM.png)
 
 Material:
 
 A new form of the gradient descent equation:
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_6.41.58_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_6.41.58_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_6.41.58_PM.png](Week1/Screen_Shot_2020-10-28_at_6.41.58_PM.png)
 
 A single example of derivative.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_6.42.55_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_6.42.55_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_6.42.55_PM.png](Week1/Screen_Shot_2020-10-28_at_6.42.55_PM.png)
 
-So this is simply gradient descent on the original cost function j. This method looks at every example in the entire training set on every step, which is called **batch gradient descent.** Note that, while gradient descent can be susceptible to **local minima** in general. the optimization problem we have posed here for linear regression has only on global, and no other local, optima; thus gradient descent always converges to the global minimum. 
+So this is simply gradient descent on the original cost function j. This method looks at every example in the entire training set on every step, which is called **batch gradient descent.【批量梯度下降】** Note that, while gradient descent can be susceptible to **local minima** in general. the optimization problem we have posed here for linear regression has only on global, and no other local, optima; thus gradient descent always converges to the global minimum. 
 
 Indeed, j is a **convex quadratic function**. Here is an example of gradient descent as it run to minimize a quadratic function.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Untitled.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Untitled.png)
+![Week1/Untitled.png](Week1/Untitled.png)
 
 The ellipses shown above are the contours of a quadratic function. Also shown is the trajectory taken by gradient descent, which was initialized at (48,30). The x’s in the figure (joined by straight lines) mark the successive values of θ that gradient descent went through as it converged to its minimum.
 
 Rating Test:
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_8.31.33_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_8.31.33_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_8.31.33_PM.png](Week1/Screen_Shot_2020-10-28_at_8.31.33_PM.png)
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_8.35.23_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_8.35.23_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_8.35.23_PM.png](Week1/Screen_Shot_2020-10-28_at_8.35.23_PM.png)
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_8.37.06_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_8.37.06_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_8.37.06_PM.png](Week1/Screen_Shot_2020-10-28_at_8.37.06_PM.png)
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_9.01.07_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_9.01.07_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_9.01.07_PM.png](Week1/Screen_Shot_2020-10-28_at_9.01.07_PM.png)
 
 Choose C and D
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_8.53.44_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_8.53.44_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_8.53.44_PM.png](Week1/Screen_Shot_2020-10-28_at_8.53.44_PM.png)
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_9.09.25_PM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-28_at_9.09.25_PM.png)
+![Week1/Screen_Shot_2020-10-28_at_9.09.25_PM.png](Week1/Screen_Shot_2020-10-28_at_9.09.25_PM.png)
 
 [Answers](https://www.notion.so/1cd7ea007e554bc59178ca74776018d5)
 
-# 4. Linear Algebra Review
+# Linear Algebra Review
 
 ## Matrices and Vectors
 
@@ -324,7 +327,7 @@ Matrix: Rectangular array of numbers.
 
 Matrices are 2-dimensional arrays.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.28.31_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.28.31_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_8.28.31_AM.png](Week1/Screen_Shot_2020-10-29_at_8.28.31_AM.png)
 
 Vector: An n x 1 matrix.
 
@@ -332,11 +335,11 @@ A vector is a matrix with one column and many rows.
 
 So vectors are a **subset** of matrices.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.34.06_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.34.06_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_8.34.06_AM.png](Week1/Screen_Shot_2020-10-29_at_8.34.06_AM.png)
 
 **Notation and terms[Essential]**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.40.18_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.40.18_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_8.40.18_AM.png](Week1/Screen_Shot_2020-10-29_at_8.40.18_AM.png)
 
 **Matlab commands below:**
 
@@ -368,15 +371,15 @@ Matrix addition and subtraction, and how to multiply a matrix by a number. SO ca
 
 **Matrix Addition:**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.49.42_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.49.42_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_8.49.42_AM.png](Week1/Screen_Shot_2020-10-29_at_8.49.42_AM.png)
 
 **Scalar Multiplication:**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.51.49_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.51.49_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_8.51.49_AM.png](Week1/Screen_Shot_2020-10-29_at_8.51.49_AM.png)
 
 **Combination of Operands:**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.55.22_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_8.55.22_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_8.55.22_AM.png](Week1/Screen_Shot_2020-10-29_at_8.55.22_AM.png)
 
 **Matlab command:**
 
@@ -437,7 +440,7 @@ add_As =
 
 The number of columns of matrix must match the number of rows of vector.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.11.24_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.11.24_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_9.11.24_AM.png](Week1/Screen_Shot_2020-10-29_at_9.11.24_AM.png)
 
 m x n matrix multiply n x 1 matrix [n-dimensional vector] = m-dimensional vector
 
@@ -445,11 +448,11 @@ m x n matrix multiply n x 1 matrix [n-dimensional vector] = m-dimensional vector
 
 **Details:**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.26.48_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.26.48_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_9.26.48_AM.png](Week1/Screen_Shot_2020-10-29_at_9.26.48_AM.png)
 
 **Apply:**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.37.41_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.37.41_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_9.37.41_AM.png](Week1/Screen_Shot_2020-10-29_at_9.37.41_AM.png)
 
 **Matlab command:**
 
@@ -483,20 +486,20 @@ mult_AB =
 
 **Not commutative**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.42.59_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.42.59_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_9.42.59_AM.png](Week1/Screen_Shot_2020-10-29_at_9.42.59_AM.png)
 
 **Associative**
 
 (A * B) * C = A * (B * C)
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.46.25_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.46.25_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_9.46.25_AM.png](Week1/Screen_Shot_2020-10-29_at_9.46.25_AM.png)
 
 **Identity Matrix:**
 
 The identity matrix of size n is the n x n square matrix **with ones on the main diagonal and zeros elsewhere.
 Details of Identity Matrix:**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.55.37_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_9.55.37_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_9.55.37_AM.png](Week1/Screen_Shot_2020-10-29_at_9.55.37_AM.png)
 
 ## Inverse and Transpose
 
@@ -504,7 +507,7 @@ Start by how it relates to real numbers.
 
 **Inverse Matrix:**
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_10.07.41_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_10.07.41_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_10.07.41_AM.png](Week1/Screen_Shot_2020-10-29_at_10.07.41_AM.png)
 
 - Matrices that don't have an inverse are **"singular" or "degenerate"**
 
@@ -516,7 +519,7 @@ Sometimes you can compute inverses by hand but almost no one does that those day
 
 The transpose of a matrix is an operator which flips a matrix over its diagonal.
 
-![Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_10.14.30_AM.png](Week%201%20f0032c7fcd0748ef857e7b1b73134b0f/Screen_Shot_2020-10-29_at_10.14.30_AM.png)
+![Week1/Screen_Shot_2020-10-29_at_10.14.30_AM.png](Week1/Screen_Shot_2020-10-29_at_10.14.30_AM.png)
 
 Matlab Command
 

@@ -1,6 +1,8 @@
 # Week 2
 
-# 1. Multivariate Linear Regression
+[toc]
+
+# Multivariate Linear Regression
 
 ## Multiple Features
 
@@ -8,31 +10,31 @@ Linear regression with multiple variables is also known as "multivariate linear 
 
 We now introduce notation for equations where we can have any number of input variables:
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-10-31_at_9.21.24_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-10-31_at_9.21.24_PM.png)
+![Week2/Screen_Shot_2020-10-31_at_9.21.24_PM.png](Week2/Screen_Shot_2020-10-31_at_9.21.24_PM.png)
 
 **m = the number of training examples.**
 
 The multivariable form of the hypothesis function accommodating these multiple features is as follows:.
 
-$hθ​(x)=θ0​+θ1​x1​+θ2​x2​+θ3​x3​+⋯+θn​xn​$
+$hθ​(x)=θ0​+θ1​x1​+θ2​x2​+θ3​x3​+⋯+θn​xn$
 
 In order to develop intution about this function, we can think about θ0 as the basic price of a house, θ2 as the price per floor, etc. x1 will be the number of square meters in the house, x2 the number of floors, etc.
 
 Using the definition of matrix multiplicaiton, our multivariable hypothesis function can be concisely represented as:
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_11.39.03_AM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_11.39.03_AM.png)
+![Week2/Screen_Shot_2020-11-01_at_11.39.03_AM.png](Week2/Screen_Shot_2020-11-01_at_11.39.03_AM.png)
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-10-31_at_9.28.56_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-10-31_at_9.28.56_PM.png)
+![Week2/Screen_Shot_2020-10-31_at_9.28.56_PM.png](Week2/Screen_Shot_2020-10-31_at_9.28.56_PM.png)
 
 ## Gradient Descent for Multiple Variables
 
 The gradient descent equation itself is generally the same form; we just have to repeat it for our 'n' features:
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_11.51.30_AM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_11.51.30_AM.png)
+![Week2/Screen_Shot_2020-11-01_at_11.51.30_AM.png](Week2/Screen_Shot_2020-11-01_at_11.51.30_AM.png)
 
 The following image compares gradient descent with  one variable to gradient descent with multiple variables:
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_11.52.27_AM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_11.52.27_AM.png)
+![Week2/Screen_Shot_2020-11-01_at_11.52.27_AM.png](Week2/Screen_Shot_2020-11-01_at_11.52.27_AM.png)
 
 ## Gradient Descent in Practice I - Feature Scaling
 
@@ -40,19 +42,19 @@ We can speed up gradient descent by having each of our input values in roughly t
 
 The Idea of Feature Scaling: Make sure features are on a similar scale.
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_12.12.15_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_12.12.15_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_12.12.15_PM.png](Week2/Screen_Shot_2020-11-01_at_12.12.15_PM.png)
 
 **Feature Scaling:**
 
 Get every feature into approximately a -1 ≤ xi ≤ 1 range.
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_12.18.19_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_12.18.19_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_12.18.19_PM.png](Week2/Screen_Shot_2020-11-01_at_12.18.19_PM.png)
 
 small range difference is acceptable
 
 **Mean normalization**
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_1.07.36_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_1.07.36_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_1.07.36_PM.png](Week2/Screen_Shot_2020-11-01_at_1.07.36_PM.png)
 
 **The goal is to get all input variables into roughly one of these ranges, give or take a few.**
 
@@ -62,7 +64,7 @@ Feature scaling involves dividing the input values by the range of input variabl
 
 Mean normalization involves subtracting the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just zero.
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_1.52.14_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_1.52.14_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_1.52.14_PM.png](Week2/Screen_Shot_2020-11-01_at_1.52.14_PM.png)
 
 Purpose: 
 
@@ -80,11 +82,11 @@ center around the learning rate alpha.
 
     **Automatic convergence test.** Declare convergence if j(θ) decreases by less than E in one iteration, where E is some small value as 10 ^ -3. However in practice it's difficult to choose this threshold value.
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_2.16.43_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_2.16.43_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_2.16.43_PM.png](Week2/Screen_Shot_2020-11-01_at_2.16.43_PM.png)
 
 Summary:
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_2.18.30_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_2.18.30_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_2.18.30_PM.png](Week2/Screen_Shot_2020-11-01_at_2.18.30_PM.png)
 
 ## Features and polynomial regression
 
@@ -101,7 +103,7 @@ two features: frontage and depth.
 
 Particular problem depending on what insight you might have. We can combine multiple features into one. 
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_2.37.22_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_2.37.22_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_2.37.22_PM.png](Week2/Screen_Shot_2020-11-01_at_2.37.22_PM.png)
 
 use frontage and depth or just one feature x = frontage * depth.
 
@@ -111,19 +113,19 @@ Our hypothesis function need not be linear if that does not fit the data well.
 
 **We can change the behavior of curve of our hypothesis function by making it a quadratic, cubic or square root function.**
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_2.53.31_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_2.53.31_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_2.53.31_PM.png](Week2/Screen_Shot_2020-11-01_at_2.53.31_PM.png)
 
-One important thing to keep in mind is, if you choose your features this way then feature scaling becomes very important.
+One important thing to keep in mind is, if you choose your features this way then <u>feature scaling becomes very important.</u>
 
 How do we actually fit a model to our data?
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_2.41.18_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_2.41.18_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_2.41.18_PM.png](Week2/Screen_Shot_2020-11-01_at_2.41.18_PM.png)
 
 It's important to apply feature scaling if using gradient descent to get them into compareble ranges of values.
 
 According to this section, you have a choice in what features to use, and by designing different features you can fit more complex functions your data then just fitting a straight line to the data and in particular you can put polynomial functions as well and sometimes by appropriate insight into the features simply get a much better model for your data.
 
-# 2. Computing Parameters Analytically
+# Computing Parameters Analytically
 
 ## Normal Equation
 
@@ -133,15 +135,15 @@ A second way of doing so, this time performing the minimization explicitly and w
 
 In the "Normal Equation" method, we will minimize J by explicitly taking derivatives with respect to the the θj ’s, and setting them to zero. This allows  us to find the optimum theta without iteration. The normal equationo formula is given below:
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_4.14.38_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_4.14.38_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_4.14.38_PM.png](Week2/Screen_Shot_2020-11-01_at_4.14.38_PM.png)
 
 There is no need to do feature scaling with the normal equation.
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_3.18.50_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_3.18.50_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_3.18.50_PM.png](Week2/Screen_Shot_2020-11-01_at_3.18.50_PM.png)
 
 The following is a comparison of gradient descent and the normal equation.
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_4.20.30_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_4.20.30_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_4.20.30_PM.png](Week2/Screen_Shot_2020-11-01_at_4.20.30_PM.png)
 
 - Octave:
 
@@ -160,21 +162,17 @@ The reason $X^T * X$ is **noninvertible, the common cause might be having :**
 
 Consider about the non-invertible situation.
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_8.01.35_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_8.01.35_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_8.01.35_PM.png](Week2/Screen_Shot_2020-11-01_at_8.01.35_PM.png)
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_8.05.22_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_8.05.22_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_8.05.22_PM.png](Week2/Screen_Shot_2020-11-01_at_8.05.22_PM.png)
 
 - delete some features.
 - use regularization.
 
 Review:
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_8.45.03_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_8.45.03_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_8.45.03_PM.png](Week2/Screen_Shot_2020-11-01_at_8.45.03_PM.png)
 
-![Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_8.44.38_PM.png](Week%202%20bf42be7960d74e65950b6fdf522ba487/Screen_Shot_2020-11-01_at_8.44.38_PM.png)
+![Week2/Screen_Shot_2020-11-01_at_8.44.38_PM.png](Week2/Screen_Shot_2020-11-01_at_8.44.38_PM.png)
 
-课后题：
-
-[Coursera Machine Learning 第二周 quiz Octave/Matlab Tutorial 习题答案_OovEver的专栏-CSDN博客](https://blog.csdn.net/mupengfei6688/article/details/53099316)
-
-[课后题](https://www.notion.so/215003ec062b479887d1aab3a41a5df5)
+补充：Normal Equation 公式的推导
