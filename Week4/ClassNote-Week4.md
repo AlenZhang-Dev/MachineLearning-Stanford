@@ -1,5 +1,7 @@
 # Week4
 
+[toc]
+
 # Neural Networks: Representation
 
 ## Model Represent I

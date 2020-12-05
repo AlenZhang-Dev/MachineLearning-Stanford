@@ -10,6 +10,7 @@ Author: Alen Zhang
 | 2    | [Linear Regression with Multiple Variables][2]            | [Linear Regression][1a] |
 | 3    | [Logistic Regression][3]            |[Logistic Regression][2a]    |
 | 4    | [Neural Networks: Representation][4]            |[Multi-class Classification and Neural Networks][3a]    |
+| 5    | [Neural Networks: Learning][5]            |[Neural Networks Learning][4a]    |
 
 ## 
 
@@ -25,6 +26,8 @@ Author: Alen Zhang
 | 3 | [Classification][3l]      |
 | 3.1 | [The problem of overfitting][3.1l]      |
 | 4 | [Neural Networks: Representation][4l]      |
+| 5 | [Neural Networks: Learning][5l]      |
+
 
 Course Link: [Coursera](https://www.coursera.org/learn/machine-learning/home/welcome)
 
@@ -34,6 +37,7 @@ Course Link: [Coursera](https://www.coursera.org/learn/machine-learning/home/wel
 [2]:./Week2/ClassNote-Week2.md
 [3]:./Week3/ClassNote-Week3.md
 [4]:./Week4/ClassNote-Week4.md
+[5]:./Week5/ClassNote-Week5.md
 
 [1l]:./LectureSlide/Lecture1-Introduction.pdf
 [1.1l]:./LectureSlide/Lecture2-Linear%20regression%20with%20one%20variable.pdf
@@ -43,6 +47,7 @@ Course Link: [Coursera](https://www.coursera.org/learn/machine-learning/home/wel
 [3l]:./LectureSlide/Lecture6-Classification
 [3.1l]:/LectureSlide/Lecture7-The%20problem%20of%20overfitting.pdf
 [4l]:./LectureSlide/Lecture8-Non%20linear%20hypotheses.pdf
+[5l]:./LectureSlide/Lecture9-Neural%20Networks.pdf
 
 [1a]:./Assignment/machine-learning-ex1/ex1
 [2a]:./Assignment/machine-learning-ex2/ex2
