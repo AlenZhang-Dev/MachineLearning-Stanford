@@ -114,6 +114,8 @@ for i = 1:m,
 
 Choose B and C.
 
-参考链接：
+
+
+Reference：
 
 [神经网络15分钟入门！--反向传播到底是怎么传播的？](https://zhuanlan.zhihu.com/p/66534632)
