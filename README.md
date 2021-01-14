@@ -12,6 +12,7 @@ Author: Alen Zhang
 | 4    | [Neural Networks: Representation][4]            |[Multi-class Classification and Neural Networks][3a]    |
 | 5    | [Neural Networks: Learning][5]            |[Neural Networks Learning][4a]    |
 | 6   | [Advice for Applying Machine Learning][6] |[Regularized Linear Regression and Bias v.s. Variance][5a]    |
+| 7   | [Support Vector Machines][7] |[Support Vector Machines][6a]    |
 
 ## 
 
@@ -30,7 +31,7 @@ Author: Alen Zhang
 | 5 | [Neural Networks: Learning][5l]      |
 | 6.1 | [Adive for applying machine learning][6l]      |
 | 6.2 | [Machine learning system design][6.1l]      |
-
+| 7 | [Support Vector Machine][7l]      |
 
 Course Link: [Coursera](https://www.coursera.org/learn/machine-learning/home/welcome)
 
@@ -42,7 +43,7 @@ Course Link: [Coursera](https://www.coursera.org/learn/machine-learning/home/wel
 [4]:./Week4/ClassNote-Week4.md
 [5]:./Week5/ClassNote-Week5.md
 [6]:./Week6/ClassNote-Week6.md
-
+[7]:./Week7/ClassNote-Week7.md
 [1l]:./LectureSlide/Lecture1-Introduction.pdf
 [1.1l]:./LectureSlide/Lecture2-Linear%20regression%20with%20one%20variable.pdf
 [1.2l]:./LectureSlide/Lecture3-Linear%20Algebra%20review(optional).pdf
@@ -54,11 +55,12 @@ Course Link: [Coursera](https://www.coursera.org/learn/machine-learning/home/wel
 [5l]:./LectureSlide/Lecture9-Neural%20Networks.pdf
 [6l]:./LectureSlide/Lecture10-Advice%20for%20applying%20machine%20learning.pdf
 [6.1l]:./LectureSlide/Lecture11-Machine%20Learning%20design.pdf
-
+[7l]:./LectureSlide/Lecture12-Support%20Vector%20Machines.pdf
 
 [1a]:./Assignment/machine-learning-ex1/ex1
 [2a]:./Assignment/machine-learning-ex2/ex2
 [3a]:./Assignment/machine-learning-ex3/ex3
 [4a]:./Assignment/machine-learning-ex4/ex4
 [5a]:./Assignment/machine-learning-ex5/ex5
+[6a]:./Assignment/machine-learning-ex6/ex6
 
