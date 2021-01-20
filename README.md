@@ -13,6 +13,7 @@ Author: Alen Zhang
 | 5    | [Neural Networks: Learning][5]            |[Neural Networks Learning][4a]    |
 | 6   | [Advice for Applying Machine Learning][6] |[Regularized Linear Regression and Bias v.s. Variance][5a]    |
 | 7   | [Support Vector Machines][7] |[Support Vector Machines][6a]    |
+| 8   | [Unsupervised Learning][8] |[K-means Clustering and Principal Component Analysis][7a]    |
 
 ## 
 
@@ -29,9 +30,11 @@ Author: Alen Zhang
 | 3.1 | [The problem of overfitting][3.1l]      |
 | 4 | [Neural Networks: Representation][4l]      |
 | 5 | [Neural Networks: Learning][5l]      |
-| 6.1 | [Adive for applying machine learning][6l]      |
-| 6.2 | [Machine learning system design][6.1l]      |
+| 6 | [Adive for applying machine learning][6l]      |
+| 6.1 | [Machine learning system design][6.1l]      |
 | 7 | [Support Vector Machine][7l]      |
+| 8 | [Clustering][8l]      |
+| 8.1 | [Dimensionality Reduction][8.1l]      |
 
 Course Link: [Coursera](https://www.coursera.org/learn/machine-learning/home/welcome)
 
@@ -44,6 +47,7 @@ Course Link: [Coursera](https://www.coursera.org/learn/machine-learning/home/wel
 [5]:./Week5/ClassNote-Week5.md
 [6]:./Week6/ClassNote-Week6.md
 [7]:./Week7/ClassNote-Week7.md
+[8]:./Week8/ClassNote-Week8.md
 [1l]:./LectureSlide/Lecture1-Introduction.pdf
 [1.1l]:./LectureSlide/Lecture2-Linear%20regression%20with%20one%20variable.pdf
 [1.2l]:./LectureSlide/Lecture3-Linear%20Algebra%20review(optional).pdf
@@ -56,6 +60,8 @@ Course Link: [Coursera](https://www.coursera.org/learn/machine-learning/home/wel
 [6l]:./LectureSlide/Lecture10-Advice%20for%20applying%20machine%20learning.pdf
 [6.1l]:./LectureSlide/Lecture11-Machine%20Learning%20design.pdf
 [7l]:./LectureSlide/Lecture12-Support%20Vector%20Machines.pdf
+[8l]:./LectureSlide/Lecture13-Clustering.pdf
+[8.1]:./LectureSlide/Lecture14-Dimensionality%20Reduction.pdf
 
 [1a]:./Assignment/machine-learning-ex1/ex1
 [2a]:./Assignment/machine-learning-ex2/ex2
@@ -63,4 +69,4 @@ Course Link: [Coursera](https://www.coursera.org/learn/machine-learning/home/wel
 [4a]:./Assignment/machine-learning-ex4/ex4
 [5a]:./Assignment/machine-learning-ex5/ex5
 [6a]:./Assignment/machine-learning-ex6/ex6
-
+[7a]:./Assignment/machine-learning-ex7/ex7
